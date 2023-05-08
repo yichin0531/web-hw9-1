@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto load</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+    #panorama {
+        width: 600px;
+        height: 400px;
+    }
+    </style>
+</head>
+<body>
+<center>
+<h1>張家祖廟</h1>
+    <p>張家祖廟於舊名下七張犁（今西屯協和里一帶），為祖籍福建省漳州府平和縣馬堂田背鄉之張氏祠堂，興建於日治明治37年（1904），
+    <br>二戰以後，歷經幾次大修，現存祖廟坐西朝東，是一座兩進兩廊四護龍的四合院祠宇建築。屬私人祠堂性質，正殿奉祀祖先牌位，
+    <br>左右內外護龍除供族人居住外亦出租給外人使用。</p>
+<div id="panorama"></div>
+
+<br>
+<iframe src="tiur.html" width="600px" height="400px"></iframe>
+</center>
+<script>
+pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "panorama": "1.jpg",
+    "autoLoad": true
+});
+</script>
+
+</body>
+</html>
